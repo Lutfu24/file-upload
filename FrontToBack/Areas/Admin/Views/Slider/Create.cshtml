@@ -1,0 +1,35 @@
+﻿@using FrontToBack.Areas.Admin.ViewModels;
+@model SliderViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Image</label>
+                            <input class="form-control" asp-for="Image" placeholder="Image" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Title</label>
+                            <input class="form-control" asp-for="Title" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Description</label>
+                            <input class="form-control" asp-for="Offer" placeholder="Description">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-action="Index" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

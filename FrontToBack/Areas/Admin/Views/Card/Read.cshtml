@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Read";
+}
+@model Card
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Cards</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="~/assets/images/website-images/@Model.Image"/>
+                                </td>
+                                <td>@Model.Title</td>
+                                <td>@Model.Description</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-responsive">
+                        <a asp-action="Index" class="btn btn-light">Go back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
